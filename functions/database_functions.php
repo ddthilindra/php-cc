@@ -1,6 +1,6 @@
 <?php
 	function db_connect(){
-		$conn = mysqli_connect("cloudbookstorecc-server.mysql.database.azure.com", "vzxhyrpain", "VO706ZUN4Z57MI1R$", "CloudBookStoreCC",3306, NULL, MYSQL_ATTR_SSL_CA);
+		$conn = mysqli_connect("cloudbookstorecc-server.mysql.database.azure.com", "vzxhyrpain", "VO706ZUN4Z57MI1R$", "CloudBookStoreCC",3306, NULL, "MYSQL_ATTR_SSL_CA");
 		if(!$conn){
 			echo "Can't connect database " . mysqli_connect_error($conn);
 			exit;
